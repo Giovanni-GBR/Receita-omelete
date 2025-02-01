@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'minhafont1';
+  src: url(/fonts/YoungSerif-Regular.ttf);
+}
+@font-face {
+  font-family: 'minhafont2';
+  src: url(/fonts/Outfit-VariableFont_wght.ttf)
+}
+
+body {
+  font-size: 16px;
+  background: hsl(30, 54%, 90%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+}
+.cabecalho img{
+  align-self: center;
+  border-radius: 10px;
+  width: 100%;
+}
+.cabecalho h1{
+  font-family: 'minhafont1';
+  color: hsl(24, 5%, 18%);
+  margin-bottom: 10px;
+}
+.cabecalho p{
+  font-family: 'minhafont2';
+  color: hsl(30, 10%, 34%);
+  margin-top: 0;
+}
+
+.principal{
+  height: auto;
+  width: 650px;
+  background: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  padding: 40px;
+}
+.principal h2{
+  font-family: 'minhafont1';
+  color: hsl(14, 45%, 36%);
+}
+.principal p{
+  font-size: 16px;
+}
+
+.Assunto ul, ol{
+  padding-left: 20px;
+  list-style: ;
+}
+.Assunto li{
+  font-family: 'minhafont2';
+  padding: 5px;
+  padding-left: 15px;
+  color: hsl(30, 10%, 34%);
+}
+
+.preparation-time{
+  background: hsl(330, 100%, 98%);
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+.preparation-time h2{
+  font-family: 'minhafont2';
+  color: hsl(332, 51%, 32%);
+}
+
+.divs{
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.nutrition p{
+  font-family: 'minhafont2';
+  color: hsl(30, 10%, 34%);
+}
+.nutrition .detalhes div{
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding: 15px;
+}
+.nutrition .detalhes span{
+  font-family: 'minhafont2';
+  text-align: left;
+  width: auto;
+  margin-right: 10px;
+  color: hsl(14, 45%, 36%);
+}
+.nutrition .detalhes .pro{
+  color: hsl(30, 10%, 34%);
+}
+.nutrition .detalhes .quantidade{
+  text-align: right;
+  margin-left: 100px;
+}
+.nutrition .detalhes .fat{
+  border: none;
+}
+
+@media screen and (max-width: 700px){
+  body{
+    display: contents;
+  }
+  .principal{
+    padding: 0 40px;
+    width: 310px;
+  }
+  
+  .cabecalho img{
+    border-radius: 0;
+    width: 100vw;
+  }
+}
