@@ -39,7 +39,7 @@ header{
 }
 
 .principal{
-  max-height: 100vh;
+  max-height: 1580px;
   width: 650px;
   background: hsl(0, 0%, 100%);
   border-radius: 10px;
